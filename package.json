@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "This is a website for Ristorante Con Fusion",
   "main": "aboutus.html",
+  "homepage": "https://github.com/Hazem94/Front-End-UI",
   "scripts": {
     "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1",
