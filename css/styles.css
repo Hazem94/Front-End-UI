@@ -55,3 +55,9 @@ body{
 	top: 0;
 	left: 0;
 }
+
+#myCarouselButtons{
+	right: 0;
+	bottom: 0;
+	position: absolute;
+}

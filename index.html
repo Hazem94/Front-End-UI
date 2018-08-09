@@ -197,6 +197,14 @@
                         <a href="#myCarousel" data-slide="next" class="carousel-control-next">
                             <div class="carousel-control-next-icon"></div>
                         </a>
+                        <div class="btn-group" id="myCarouselButtons">
+                            <button type="button" class="btn btn-danger btn-sm" id="carouselPause">
+                                <span class="fa fa-pause"></span>
+                            </button>
+                            <button type="button" class="btn btn-danger btn-sm" id="carouselPlay">
+                                <span class="fa fa-play"></span>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -295,6 +303,18 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+   <script type="text/javascript">
+       $(document).ready(function() {
+           $('#myCarousel').carousel({interval:1000});
+           $('#carouselPause').click(function() {
+               $('#myCarousel').carousel('pause');
+           });
+           $('#carouselPlay').click(function(event) {
+               $('#myCarousel').carousel('cycle');
+           });
+
+       });
+   </script>
 </body>
 
 </html>
